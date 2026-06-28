@@ -361,3 +361,40 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+##################################################
+# EmployeeManagement.API
+##################################################
+
+# Local logs
+Logs/
+logs/
+app-*.txt
+
+# Local secrets
+secrets.json
+
+# SonarQube
+.sonarqube/
+
+# Snyk
+.snyk
+
+# Build check
+.buildcheck/
+
+# VS Code
+.vscode/
+
+# Rider
+.idea/
+
+# Docker override
+docker-compose.override.yml
+
+# Coverage
+coverage/
+coverage-report/
+
+# Local app settings (optional)
+appsettings.Local.json

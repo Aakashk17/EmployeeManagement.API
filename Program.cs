@@ -4,7 +4,12 @@ using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
-await builder.Configuration.AddKeyVaultSecretsAsync();
+var keyVaultEnabled = builder.Configuration.GetValue<bool>("KeyVaultSettings:Enabled");
+
+if (keyVaultEnabled)
+{
+    await builder.Configuration.AddKeyVaultSecretsAsync();
+}
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

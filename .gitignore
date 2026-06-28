@@ -398,3 +398,4 @@ coverage-report/
 
 # Local app settings (optional)
 appsettings.Local.json
+appsettings.Development.json

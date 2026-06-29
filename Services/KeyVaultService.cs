@@ -33,7 +33,7 @@ public sealed class KeyVaultService : IKeyVaultService
         }
         catch (CredentialUnavailableException exception)
         {
-            throw new InvalidOperationException("Azure Key Vault authentication failed. Re-authenticate your Azure developer identity or configure managed identity/service principal credentials.", exception);
+            throw new InvalidOperationException("Azure Key Vault authentication failed !. Re-authenticate your Azure developer identity or configure managed identity/service principal credentials.", exception);
         }
         catch (AuthenticationFailedException exception)
         {
